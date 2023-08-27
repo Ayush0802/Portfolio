@@ -6,6 +6,7 @@
     <title>Ayush Bhut</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="animate.min.css">
 </head>
 <body>
     <header class="header">
@@ -35,7 +36,7 @@
 
     <section class="about" id="about">
         <div class="sec2">
-            <h3>Know More About Me</h3>
+            <h3 class="animate-heading">Know More About Me</h3>
         </div>
         <div class="new">
             <ul class="para2">
@@ -55,7 +56,7 @@
 
     <section class="education" id="education">
         <div class="sec3">
-            <h3>My <span>Educational</span> Journey</h3>
+            <h3 class="animate-heading">My <span>Educational</span> Journey</h3>
         </div>
         <div class="educ_row">
             <a href="https://www.stmarybhavnagar.org/" class="linked-content-box" target="_blank">
@@ -93,7 +94,7 @@
 
     <section class="skills" id="skills">
         <div class="sec4">
-            <h3>My Skills</h3>
+            <h3 class="animate-heading">My Skills</h3>
         </div>
         <div class="all">
         <a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank"><img src="c.png" class="code"></a>
@@ -108,7 +109,7 @@
 
     <section class="projects" id="projects">
         <div class="sec5">
-            <h3>My <span>Projects</span></h3>
+            <h3 class="animate-heading">My <span>Projects</span></h3>
         </div>
         <div class="proj_row">
             <div class="proj_col1">
@@ -181,7 +182,7 @@
 
     <section class="contact" id="contact">
         <div class="sec6">
-            <h3>Connect With Me</h3>
+            <h3 class="animate-heading">Connect With Me</h3>
         </div>
         <div class="contact_row">
             <div class="contact_col1">
@@ -229,24 +230,6 @@
             <p>Copyright &copy; 2023 Ayush Bhut. All rights reserved.</p>
         </div>
     </footer>
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbxyKAXCxQp0gNCw4lSzgK_EqlWN34WJ3a2GFHXxRmKlLVyRt5pjCBSprivAZgGN7OdB/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg")
-
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => {
-                    msg.innerHTML = "Message sent successfully !!!"
-                    setTimeout(function(){
-                        msg.innerHTML = ""
-                        },3000)
-                    form.reset()
-                })
-            .catch(error => console.error('Error!', error.message))
-        })
-    </script>
     <script src="script.js"></script>
     
 </body>
