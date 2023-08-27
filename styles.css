@@ -291,7 +291,7 @@ li {
     margin-top: 2rem;
 }
 
-.fa-solid{
+.cal .fa-solid{
     color: #66fcf1;
 }
 
@@ -619,7 +619,7 @@ li {
     gap: .5rem;
 }
 
-.fa-solid{
+.email .fa-solid{
     color: #08353e;
     margin-top: 0.85rem;
 }
