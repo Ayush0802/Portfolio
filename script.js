@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+
 document.addEventListener("DOMContentLoaded", function() {
   const navLinks = document.querySelectorAll("nav a");
   const sections = document.querySelectorAll("section");
@@ -48,6 +49,40 @@ document.addEventListener("DOMContentLoaded", function() {
   updateActiveLink(); // Call the function initially to set the active link on page load
 });
 
+
+const headings = document.querySelectorAll('.animate-heading');
+
+function checkScroll() {
+  headings.forEach(heading => {
+    const boundingRect = heading.getBoundingClientRect();
+    if (boundingRect.top < window.innerHeight * 0.85) {
+      heading.classList.add('active'); // Add animation classes
+    } else {
+      heading.classList.remove('active'); // Remove animation classes
+    }
+  });
+}
+
+window.addEventListener('scroll', checkScroll);
+window.addEventListener('load', checkScroll);
+
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxyKAXCxQp0gNCw4lSzgK_EqlWN34WJ3a2GFHXxRmKlLVyRt5pjCBSprivAZgGN7OdB/exec'
+const form = document.forms['submit-to-google-sheet']
+const msg = document.getElementById("msg")
+
+form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+            msg.innerHTML = "Message sent successfully !!!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+                },3000)
+            form.reset()
+        })
+    .catch(error => console.error('Error!', error.message))
+})
 
 
 
