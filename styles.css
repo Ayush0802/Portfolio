@@ -67,6 +67,7 @@ span{
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
+    transition: 0.3s ease-in-out;
 }
 
 .navbar a:hover{
@@ -499,8 +500,12 @@ li {
 }
 
 .mysqlcode3{
-    margin-bottom: 4.5rem;
+    margin-bottom: 8.5rem;
     width: 160px;
+}
+
+.reactcode4{
+    margin-bottom: 2rem;
 }
 
 .code:hover{
