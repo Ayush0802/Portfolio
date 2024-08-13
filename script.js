@@ -75,6 +75,7 @@ form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, {
         method: 'POST',
+        mode: 'no-cors',
         body: new FormData(form),
     })
     .then(response => {
