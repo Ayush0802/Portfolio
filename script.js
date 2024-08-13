@@ -78,15 +78,11 @@ form.addEventListener('submit', e => {
         body: new FormData(form),
     })
     .then(response => {
-        if (response.ok) {
-            msg.innerHTML = "Message sent successfully !!!";
+        msg.innerHTML = "Message sent successfully !!!"
             setTimeout(function(){
-                msg.innerHTML = "";
-            }, 3000);
-            form.reset();
-        } else {
-            throw new Error('Network response was not ok.');
-        }
+                msg.innerHTML = ""
+                },3000)
+            form.reset()
     })
     .catch(error => console.error('Error!', error.message));
 
