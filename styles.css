@@ -682,3 +682,222 @@ footer {
     max-width: 800px;
     margin: 0 auto;
 }
+
+
+/* Add these media query rules at the end of your existing CSS */
+
+/* General Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    /* Navbar Adjustments */
+    .header {
+        padding: 15px 5%;
+    }
+
+    .name {
+        font-size: 28px;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        background: #08353e;
+        padding-top: 60px;
+        transition: 0.3s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar.active {
+        right: 0;
+    }
+
+    .navbar a {
+        display: block;
+        margin: 20px 0;
+        font-size: 20px;
+    }
+
+    /* Home Section Adjustments */
+    .home {
+        padding: 0 5%;
+        text-align: center;
+    }
+
+    .home-content h1 {
+        font-size: 40px;
+    }
+
+    .home-content h2 {
+        font-size: 30px;
+    }
+
+    .home-content h3 {
+        font-size: 25px;
+    }
+
+    .home-content p {
+        font-size: 16px;
+    }
+
+    .image-container img {
+        width: 80%;
+        max-width: 300px;
+        margin-top: 1rem;
+    }
+
+    /* About Section Adjustments */
+    .new {
+        flex-direction: column;
+    }
+
+    .image-container2 img {
+        margin-right: 0;
+        width: 250px;
+        margin-bottom: 3rem;
+    }
+
+    /* Education Section Adjustments */
+    .educ_row {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .box-content .content {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        min-height: 400px;
+    }
+
+    /* Skills Section Adjustments */
+    .all {
+        gap: 25px;
+    }
+
+    .code {
+        width: 120px;
+    }
+
+    .htmlcode2 {
+        width: 160px;
+    }
+
+    /* Projects Section Adjustments */
+    .proj_row {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .proj_box .proj_content {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        min-height: 120px;
+    }
+
+    .proj_content h2 {
+        font-size: 22px;
+    }
+
+    .temp h3, .temp2 h3 {
+        font-size: 20px;
+        margin-left: 1rem;
+    }
+
+    /* Contact Section Adjustments */
+    .contact_row {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .contact_col1 {
+        margin-right: 0;
+    }
+
+    .contact_col2 {
+        width: 100%;
+    }
+
+    form input, form textarea {
+        font-size: 16px;
+    }
+}
+
+/* Additional adjustments for very small screens */
+@media screen and (max-width: 480px) {
+
+    .para2{
+        font-size: 20px;
+    }
+    .image-container{
+        opacity: 0;
+    }
+    .home-content h1 {
+        font-size: 32px;
+    }
+
+    .home-content h2 {
+        font-size: 24px;
+    }
+
+    .home-content h3 {
+        font-size: 20px;
+    }
+
+    .sec2, .sec3, .sec4, .sec5, .sec6 {
+        font-size: 36px;
+    }
+
+    .code {
+        width: 100px;
+    }
+
+    .htmlcode2 {
+        width: 140px;
+    }
+
+    .btn {
+        font-size: 18px;
+        padding: 8px 24px;
+    }
+}
+
+/* Add a hamburger menu button for mobile */
+.menu-btn {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 101;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-btn {
+        display: block;
+    }
+
+    .menu-btn .bar {
+        width: 25px;
+        height: 3px;
+        background: #66fcf1;
+        margin: 5px auto;
+        transition: 0.3s ease-in-out;
+    }
+
+    .menu-btn.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .menu-btn.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-btn.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
