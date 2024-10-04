@@ -763,7 +763,7 @@ footer {
     /* Education Section Adjustments */
     .educ_row {
         flex-direction: column;
-        gap: 2rem;
+        gap: 1rem;
     }
 
     .box-content .content {
@@ -837,6 +837,10 @@ footer {
         align-items: center;
     }
 
+    .box-content{
+        scale: 0.9;
+    }
+
     .para2{
         font-size: 20px;
     }
@@ -852,10 +856,12 @@ footer {
         font-size: 20px;
     }
 
-    .box-content{}
+    .content:hover{
+        transform: scale(1);
+    }
 
     .sec2, .sec3, .sec4, .sec5, .sec6 {
-        font-size: 36px;
+        font-size: 34px;
     }
 
     .code {
