@@ -799,6 +799,10 @@ footer {
         min-height: 120px;
     }
 
+    .proj_content:hover{
+        transform: scale(1);
+    }
+
     .proj_content h2 {
         font-size: 22px;
     }
@@ -861,6 +865,10 @@ footer {
     }
 
     .content:hover{
+        transform: scale(1);
+    }
+
+    .proj_content:hover{
         transform: scale(1);
     }
 
