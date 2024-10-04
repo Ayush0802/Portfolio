@@ -830,11 +830,15 @@ footer {
 /* Additional adjustments for very small screens */
 @media screen and (max-width: 480px) {
 
+    .home{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .para2{
         font-size: 20px;
-    }
-    .image-container{
-        opacity: 0;
     }
     .home-content h1 {
         font-size: 32px;
@@ -847,6 +851,8 @@ footer {
     .home-content h3 {
         font-size: 20px;
     }
+
+    .box-content{}
 
     .sec2, .sec3, .sec4, .sec5, .sec6 {
         font-size: 36px;
