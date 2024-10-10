@@ -132,7 +132,7 @@ nav a.active {
 
 .image-container {
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
   
 .image-container img {
