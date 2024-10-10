@@ -913,6 +913,13 @@ footer {
         font-size: 18px;
         padding: 8px 24px;
     }
+
+    .footer{
+        padding: 13px;
+    }
+    .footer-content{
+        font-size: 13px;
+    }
 }
 
 /* Add a hamburger menu button for mobile */
